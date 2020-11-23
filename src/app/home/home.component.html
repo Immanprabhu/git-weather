@@ -1,0 +1,26 @@
+<section>
+    <div class="searchContainer">
+        <input type="text" placeholder="SEARCH.." #cityName>
+        <button id="buttonId" (click)="getCityName(cityName.value)" >SEARCH</button>
+        <b *ngIf="errmsg" class="notFound"> Location not found! Try another.</b>
+    </div>
+</section>
+<section>
+    <div class="sectionContainer">
+        <div class="cardContainer" *ngFor = "let location of newArray">
+            <a [routerLink]="['/cityDetails']" [queryParams]="{ cityname: location.name }">
+                <div class="cardCity">
+                    <span>{{location?.name}}</span>
+                </div>
+                <div class="floatLeft">
+                    <img src="assets/images/celcius.png" alt="celsius">
+                    <strong>{{ (location.main.temp - 273.15).toFixed(0) }}<small>°C</small></strong>
+                </div> 
+                <div class="buttonClass">
+                    <button id="hazeId">{{ location.weather[0].description }}</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+       

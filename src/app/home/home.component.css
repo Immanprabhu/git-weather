@@ -1,0 +1,151 @@
+.cardCity {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    color:#ffffff; 
+    width:100%;
+    border-radius:10px 10px 0px 0px;
+    text-align: center;
+    letter-spacing: 3px;
+    background:rgb(72, 70, 109);
+}
+span{
+    font-size:27px ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    color:#ffffff;
+    max-width: 30%;
+    text-align: center;
+    letter-spacing: 3px;
+    background:rgb(72, 70, 109);
+}
+::placeholder{
+  font-weight: 400;
+  color:#fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background:rgb(72, 70, 109);
+    box-shadow: 0px 4px 8px 0px #2f6581;
+}
+section{
+    width: 100%;
+    position: relative;
+    z-index:1;
+    top:150px;
+}
+.sectionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+}
+.searchContainer{
+  margin:0 auto;
+  display:flex;
+  max-width: 90%;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border-radius:50px 0px 0px 50px;
+    border:1px solid #fff;
+    outline: none;
+    background: none;
+    padding:1px 4px 1px 20px;
+    width:400px;
+    color:#fff;
+    text-transform: uppercase;
+    height: 36px;
+
+}
+#buttonId{
+    font: 600 18px 'Segoe UI';
+    width: 150px;
+    outline:none;
+    color:#ecebf0;
+    border:1px solid #fff;
+    margin-right: 30px;
+    height: 40px;
+    border-left:none;
+    padding: 0;
+    cursor: pointer;
+    background:rgb(72, 70, 109);
+    border-radius:0px 50px 50px 0px;
+}
+#buttonId:hover{
+    background: #3d84a8;
+}
+#hazeId{
+    border-radius:20px;
+    border: none;
+    font:300 20px  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin:0 auto;
+    text-align: center;
+    padding: 4px 30px;
+    color:white;
+    background-color: #2fb2b3;
+}
+.buttonClass{
+    text-align:center;
+    width:100%;
+    background-color:#46cdcf;
+    padding-bottom: 20px;
+    border-radius:0px 0px 10px 10px;
+}
+.cardContainer:hover{
+    border-radius:10px 10px 10px 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    background-color:rgb(61, 177, 179);
+    transition: all .3s ease-out;
+}  
+ 
+.cardContainer{
+    border-radius:10px 10px 10px 10px;
+    width:300px;
+    margin-bottom: 20px;
+}
+strong{
+    background: none;
+    font: 300 65px "Open Sans";
+    color:white;
+}
+.notFound{
+    background: none;
+    font: 300 20px "Open Sans";
+    color:white;
+    margin: 10px 20px;
+}
+small{
+    background: none;
+    color:white;
+    font: 400 25px 'Segoe UI';  
+    position: relative;
+    bottom:16px;
+    margin:10px;
+}
+.floatLeft{
+   width:fit-content;
+   display: flex;
+   background:#46cdcf;
+   max-width: 100%;
+   width:300px;
+   justify-content: center;
+}
+.cardContainer img{
+    background: none;
+    width:50px;
+    height: 50px;
+}
+section{
+    padding-top:20px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    max-width: 90%;
+}

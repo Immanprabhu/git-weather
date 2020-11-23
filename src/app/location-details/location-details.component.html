@@ -1,0 +1,70 @@
+<section>
+    <div class="container">
+       <div class="backButton"  [routerLink]="['/countries']">
+            <button>
+                <i class="fa fa-angle-left leftIcon" aria-hidden="true"></i>
+            </button>
+       </div>
+       <div class="cityName">
+          <span>{{weatherData?.name}}</span>
+        </div>
+    </div>
+    <div class="tempContainer">
+        <div class="celciusContainer">
+            <div class="floatLeftCelcius">
+                <img src="assets/images/celcius.png" alt="celsius">
+                <strong class="temp">{{ (weatherData?.main.temp - 273.15).toFixed(0) }}<small class="temp">°C</small></strong>
+                <br><button id="hazeId">{{ weatherData?.weather[0].description }}</button>
+            </div> 
+        </div>
+        <div class="celciusContainer">
+            <div class="humid">
+                <i class="humidity">HUMIDITY</i><br>
+                <strong >{{ weatherData?.main.humidity }}<small class="temp">%</small></strong>
+            </div> 
+        </div>
+        <div class="celciusContainer">
+            <div class="humid">
+                <i class="humidity">PRESSURE</i><br>
+                <strong >{{ weatherData?.main.humidity }}<small class="temp">mb</small></strong>
+            </div> 
+        </div>
+    </div>
+    <div class="tempLevelContainer">
+        <div class="highest">
+            <i class="humidity">HIGHEST</i><br>
+            <strong >{{ weatherData?.temp_max }}<small class="temp">°C</small></strong>
+        </div>
+        <div class="highest">
+            <i class="humidity">LOWEST</i><br>
+            <strong >{{ weatherData?.temp_min }}<small class="temp">°C</small></strong>
+        </div>
+        <div class="highest">
+            <i class="humidity">WIND SPEED</i><br>
+            <strong >{{ weatherData?.wind.speed  }}<small class="temp">°C</small></strong>
+        </div>
+        <div class="highest">
+            <i class="humidity">WIND DEGREE</i><br>
+            <strong >{{ weatherData?.wind.deg }}<small class="temp">°C</small></strong>
+        </div>
+    </div>
+    <div class="tempLevelContainer">
+        <div class="highest">
+            <i class="humidity">LATITUDE</i><br>
+            <strong >{{ weatherData?.coord.lat }}</strong>
+        </div>
+        <div class="highest">
+            <i class="humidity">LONGITUDE</i><br>
+            <strong >{{ weatherData?.coord.lon  }}</strong>
+        </div>
+        <div class="highest">
+            <i class="humidity">SUN RISE</i><br>
+            <i class="sunRise" > {{ weatherData?.sys?.sunrise * 1000 | date :'shortTime'}}</i>
+        </div>
+        <div class="highest">
+            <i class="humidity">SUN SET</i><br>
+            <i class='sunRise'>{{ weatherData?.sys?.sunset * 1000 | date :'shortTime'}}</i>
+        </div>
+    </div>
+</section>
+
